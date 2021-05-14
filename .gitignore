@@ -4,3 +4,5 @@ env/
 __pycache__/
 .ipynb_checkpoints/
 .vscode/settings.json
+
+/un_sdg/input
