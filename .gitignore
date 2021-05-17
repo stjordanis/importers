@@ -6,3 +6,4 @@ __pycache__/
 .vscode/settings.json
 
 /un_sdg/input
+.vscode/launch.json

@@ -61,10 +61,10 @@ def get_old_variables():
 
 
 def get_new_variables():
-    infpath = os.path.join(INPATH, 'WDIData.csv.zip')
-    df_data = pd.read_csv(infpath, compression='gzip')
+    infpath = os.path.join(INPATH, 'un_sdg.csv')
+    df_data = pd.read_csv(infpath)
     df_data.columns = df_data.columns.str.lower().str.replace(r'[\s/-]+', '_', regex=True)
-    df_variables = df_data[['indicator_name', 'indicator_code']].drop_duplicates()
+    df_variables = df_data[['indicator', 'seriescode']].drop_duplicates()
     return df_variables
 
 if __name__ == '__main__':
